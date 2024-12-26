@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickSight</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Hlavní Menu -->
+    <div id="mainMenu" class="menu">
+        <h1>QuickSight</h1>
+        <button id="startButton">Start</button>
+        <button id="leaderboardButton">Leaderboard</button>
+    </div>
+
+    <!-- Herní Plátno -->
+    <div id="gameArea" class="hidden">
+        <div id="hud">
+            <div id="timer">Čas: 30</div>
+            <div id="score">Skóre: 0</div>
+        </div>
+        <div id="gameContainer"></div>
+    </div>
+
+    <!-- Konec Hry -->
+    <div id="gameOver" class="hidden">
+        <h1>Hra Konec</h1>
+        <p>Vaše skóre: <span id="finalScore">0</span></p>
+        <input type="text" id="playerName" placeholder="Zadejte své jméno" maxlength="10">
+        <button id="submitScoreButton">Uložit Skóre</button>
+        <button id="restartButton">Restartovat</button>
+        <button id="backToMenuButton">Zpět do Menu</button>
+    </div>
+
+    <!-- Leaderboard -->
+    <div id="leaderboard" class="hidden">
+        <h1>Leaderboard</h1>
+        <ol id="leaderboardList">
+            <!-- Skóre budou zde dynamicky přidána -->
+        </ol>
+        <button id="backFromLeaderboard">Zpět</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
